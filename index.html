@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFR in Almaty — аренда квартир посуточно и по часовой</title>
+  <meta name="description" content="AFR in Almaty — аренда квартир в Алматы посуточно и по часовой. Премиум-квартиры в ЖК «Молодёжный», заселение 24/7, бронирование через WhatsApp." />
+  <meta name="theme-color" content="#08080a" />
+
+  <!-- Favicon (монограмма AFR) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238b5cf6'/%3E%3Cpath d='M20 46 L32 18 L44 46 M25 38 H39' stroke='white' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph (для репостов в WhatsApp / соцсети) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="AFR in Almaty" />
+  <meta property="og:title" content="AFR in Almaty — аренда квартир посуточно и по часовой" />
+  <meta property="og:description" content="Премиум-квартиры в ЖК «Молодёжный», Алматы. Заселение 24/7 за 10–15 минут, чисто и конфиденциально." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">AFR</span>
+        <span class="logo__dot" aria-hidden="true"></span>
+        <span class="logo__sub">in Almaty</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#apartments" class="nav__link" data-i18n="nav_apartments">Квартиры</a>
+        <a href="#tariffs" class="nav__link" data-i18n="nav_tariffs">Тарифы</a>
+        <a href="#decor" class="nav__link" data-i18n="nav_decor">Оформление</a>
+        <a href="#reviews" class="nav__link" data-i18n="nav_reviews">Отзывы</a>
+        <a href="#faq" class="nav__link" data-i18n="nav_faq">Вопросы</a>
+        <a href="#contacts" class="nav__link" data-i18n="nav_contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="langs" id="langs" role="group" aria-label="Язык сайта">
+          <button class="lang" data-lang="ru" type="button">RU</button>
+          <button class="lang" data-lang="kk" type="button">KZ</button>
+          <button class="lang" data-lang="en" type="button">EN</button>
+        </div>
+        <a href="https://wa.me/77474815942?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20AFR%20in%20Almaty" class="btn btn--accent header__cta" target="_blank" rel="noopener" data-i18n="book">Забронировать</a>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="container hero__inner">
+      <h1 class="hero__title reveal" data-i18n-html="hero_title">
+        Аренда квартир<br />
+        <span class="accent">в Алматы</span> — посуточно<br />
+        и по часовой
+      </h1>
+
+      <p class="hero__subtitle reveal" data-i18n="hero_subtitle">
+        Премиум-квартиры в ЖК «Молодёжный» на Шевченко.
+        Безупречная чистота, заселение 24/7, бронирование за минуту в WhatsApp.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a href="https://wa.me/77474815942?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20AFR%20in%20Almaty" class="btn btn--accent btn--lg" target="_blank" rel="noopener" data-i18n="hero_book">
+          Забронировать в WhatsApp
+        </a>
+        <a href="#apartments" class="btn btn--ghost btn--lg" data-i18n="hero_view">Смотреть квартиры</a>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <div class="stat__num"><span data-count="15700">15 700</span></div>
+          <div class="stat__label" data-i18n="stat1">подписчиков в Instagram</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="10" data-prefix="~">~10</span><span class="stat__unit"> мин</span></div>
+          <div class="stat__label" data-i18n="stat2">среднее заселение</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="98">98</span><span class="stat__unit">%</span></div>
+          <div class="stat__label" data-i18n="stat3">довольных гостей</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADVANTAGES ==================== -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="adv_eyebrow">Почему выбирают нас</span>
+        <h2 class="section__title" data-i18n="adv_title">Всё для комфортного проживания</h2>
+      </div>
+
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 5L18.6 9.6 13.6 11.2 12 16.2 10.4 11.2 5.4 9.6 10.4 8z"/><path d="M18.5 15l.6 1.8 1.8.6-1.8.6-.6 1.8-.6-1.8-1.8-.6 1.8-.6z"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat1_t">Чистые квартиры</h3>
+          <p class="feature__text" data-i18n="feat1_d">Генеральная уборка и свежий текстиль перед каждым заездом.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.3V12l3 1.8"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat2_t">Заселение за 10–15 минут</h3>
+          <p class="feature__text" data-i18n="feat2_d">Заселим быстро и без ожиданий — в любое время дня и ночи, 24/7.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5z"/><path d="M9.3 12l1.8 1.8 3.6-3.6"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat3_t">Конфиденциальность</h3>
+          <p class="feature__text" data-i18n="feat3_d">Полная приватность и никаких лишних вопросов при заселении.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 8.6a13 13 0 0118.4 0"/><path d="M6.2 12a8 8 0 0111.6 0"/><path d="M9.3 15a4 4 0 015.4 0"/><path d="M12 18.4h.01"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat4_t">Всё для жизни</h3>
+          <p class="feature__text" data-i18n="feat4_d">Wi-Fi, техника, посуда, бытовая химия и полотенца уже на месте.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat5_t">Локация премиум</h3>
+          <p class="feature__text" data-i18n="feat5_d">ЖК «Молодёжный» на Шевченко — рядом с центром и главными точками города.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 12.5h6M9.5 16h6"/></svg>
+          </div>
+          <h3 class="feature__title" data-i18n="feat6_t">Договор и чек</h3>
+          <p class="feature__text" data-i18n="feat6_d">Официальное оформление и фискальный чек по запросу.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== APARTMENTS ==================== -->
+  <section class="section" id="apartments">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="apt_eyebrow">Каталог</span>
+        <h2 class="section__title" data-i18n="apt_title">Премиум-квартиры в ЖК «Молодёжный»</h2>
+        <p class="section__lead" data-i18n="apt_lead">Все квартиры — премиум-класса, в одном комплексе на ул. Шевченко 85. Выберите вариант и напишите нам о датах.</p>
+      </div>
+
+      <div class="cards" id="apartments-grid">
+        <!-- Карточки создаются в script.js из массива данных -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TARIFFS ==================== -->
+  <section class="section" id="tariffs">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="tar_eyebrow">Тарифы</span>
+        <h2 class="section__title" data-i18n="tar_title">Честные цены без переплат</h2>
+        <p class="section__lead" data-i18n="tar_lead">Аренда по часам, на день, ночь или полные сутки. Ниже — полный прайс.</p>
+      </div>
+
+      <div class="tariffs">
+        <article class="tariff reveal">
+          <div class="tariff__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.3V12l3 1.8"/></svg>
+          </div>
+          <h3 class="tariff__name" data-i18n="tar1_name">По часовой</h3>
+          <p class="tariff__desc" data-i18n="tar1_desc">Для встреч, отдыха и коротких визитов.</p>
+          <div class="tariff__price" data-i18n-html="tar1_price">от 6 000 ₸<span>/ 2 часа</span></div>
+          <ul class="tariff__list">
+            <li data-i18n="tar1_li1">Минимум 2 часа</li>
+            <li data-i18n="tar1_li2">Полотенца и чистое бельё</li>
+            <li data-i18n="tar1_li3">Wi-Fi и вся техника</li>
+            <li data-i18n="tar1_li4">Полная конфиденциальность</li>
+          </ul>
+          <a href="https://wa.me/77474815942?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20%D0%BF%D0%BE%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%20(AFR%20in%20Almaty)" class="btn btn--ghost tariff__btn" target="_blank" rel="noopener" data-i18n="book">Забронировать</a>
+        </article>
+
+        <article class="tariff tariff--featured reveal">
+          <div class="tariff__badge" data-i18n="tar_badge">Популярное</div>
+          <div class="tariff__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.6A8 8 0 1110 4.2 6.5 6.5 0 0020 14.6z"/></svg>
+          </div>
+          <h3 class="tariff__name" data-i18n="tar2_name">День или ночь</h3>
+          <p class="tariff__desc" data-i18n="tar2_desc">Комфортный отдых днём или ночёвка.</p>
+          <div class="tariff__price" data-i18n-html="tar2_price">от 15 000 ₸<span>/ день · ночь</span></div>
+          <ul class="tariff__list">
+            <li data-i18n="tar2_li1">День или ночь на выбор</li>
+            <li data-i18n="tar2_li2">Заселение за 10–15 минут</li>
+            <li data-i18n="tar2_li3">Полный набор для проживания</li>
+            <li data-i18n="tar2_li4">Договор и чек по запросу</li>
+          </ul>
+          <a href="https://wa.me/77474815942?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20%D0%BD%D0%B0%20%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%BE%D1%87%D1%8C%20(AFR%20in%20Almaty)" class="btn btn--accent tariff__btn" target="_blank" rel="noopener" data-i18n="book">Забронировать</a>
+        </article>
+
+        <article class="tariff reveal">
+          <div class="tariff__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg>
+          </div>
+          <h3 class="tariff__name" data-i18n="tar3_name">Сутки</h3>
+          <p class="tariff__desc" data-i18n="tar3_desc">Полные 24 часа для командировок и отдыха.</p>
+          <div class="tariff__price" data-i18n-html="tar3_price">от 25 000 ₸<span>/ сутки</span></div>
+          <ul class="tariff__list">
+            <li data-i18n="tar3_li1">Полные сутки — 24 часа</li>
+            <li data-i18n="tar3_li2">Скидка при длительном сроке</li>
+            <li data-i18n="tar3_li3">Уборка перед заездом</li>
+            <li data-i18n="tar3_li4">Заселение 24/7</li>
+          </ul>
+          <a href="https://wa.me/77474815942?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20%D0%BD%D0%B0%20%D1%81%D1%83%D1%82%D0%BA%D0%B8%20(AFR%20in%20Almaty)" class="btn btn--ghost tariff__btn" target="_blank" rel="noopener" data-i18n="book">Забронировать</a>
+        </article>
+      </div>
+
+      <div class="pricetable reveal">
+        <div class="pricetable__scroll">
+          <table class="ptable">
+            <thead>
+              <tr>
+                <th data-i18n="th_tariff">Тариф</th>
+                <th data-i18n="th_2h">2 часа</th>
+                <th data-i18n="th_day">День</th>
+                <th data-i18n="th_night">Ночь</th>
+                <th data-i18n="th_daily">Сутки</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ptable__group"><td colspan="5" data-i18n="grp_weekday">Будни · Пн–Пт</td></tr>
+              <tr>
+                <td class="ptable__name" data-i18n="cls_standard">Стандарт</td>
+                <td>6 000 ₸</td><td>15 000 ₸</td><td>15 000 ₸</td><td>25 000 ₸</td>
+              </tr>
+              <tr>
+                <td class="ptable__name" data-i18n="cls_lux">Люкс</td>
+                <td>7 000 ₸</td><td>18 000 ₸</td><td>18 000 ₸</td><td>28 000 ₸</td>
+              </tr>
+              <tr class="ptable__group"><td colspan="5" data-i18n="grp_weekend">Выходные · Пт–Вс</td></tr>
+              <tr>
+                <td class="ptable__name" data-i18n="cls_standard">Стандарт</td>
+                <td>7 000 ₸</td><td>20 000 ₸</td><td>20 000 ₸</td><td>28 000 ₸</td>
+              </tr>
+              <tr>
+                <td class="ptable__name" data-i18n="cls_lux">Люкс</td>
+                <td>8 000 ₸</td><td>22 000 ₸</td><td>22 000 ₸</td><td>32 000 ₸</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricetable__note" data-i18n="tar_note">Все цены указаны в тенге (₸). Точную стоимость на ваши даты уточним в WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DECOR ==================== -->
+  <section class="section" id="decor">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="dec_eyebrow">Дополнительно</span>
+        <h2 class="section__title" data-i18n="dec_title">Оформление праздников</h2>
+        <p class="section__lead" data-i18n="dec_lead">Сделаем вечер особенным — оформим квартиру под ваш повод.</p>
+      </div>
+
+      <div class="cards" id="decor-grid">
+        <!-- Карточки оформления создаются в script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REVIEWS ==================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="rev_eyebrow">Отзывы</span>
+        <h2 class="section__title" data-i18n="rev_title">Что говорят гости</h2>
+      </div>
+
+      <div class="reviews">
+        <article class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text" data-i18n="rev1_text">«Прилетела ночным рейсом, заселили в третьем часу ночи без вопросов. Квартира точь-в-точь как на фото — чисто, тепло, уютно. В WhatsApp отвечали за минуту.»</p>
+          <div class="review__author">
+            <div class="review__avatar">А</div>
+            <div>
+              <div class="review__name">Айгерим Т.</div>
+              <div class="review__role" data-i18n="rev1_role">Посуточно · 2 недели назад</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text" data-i18n="rev2_text">«Жил неделю по работе. До центра пешком, рядом магазины, в квартире есть всё вплоть до зарядок и посуды. Договор и чек дали сразу — для командировки то, что нужно.»</p>
+          <div class="review__author">
+            <div class="review__avatar">Д</div>
+            <div>
+              <div class="review__name">Данияр К.</div>
+              <div class="review__role" data-i18n="rev2_role">Командировка · месяц назад</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text" data-i18n="rev3_text">«Заказывали квартиру с романтическим оформлением на годовщину — свечи, шары, всё как просили. Сделали красиво и тактично, без лишних вопросов. Спасибо!»</p>
+          <div class="review__author">
+            <div class="review__avatar">М</div>
+            <div>
+              <div class="review__name">Мадина А.</div>
+              <div class="review__role" data-i18n="rev3_role">Оформление · 3 недели назад</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="faq_eyebrow">Вопросы и ответы</span>
+        <h2 class="section__title" data-i18n="faq_title">Частые вопросы</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq1_q">Как забронировать квартиру?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq1_a">Напишите нам в WhatsApp, укажите даты и количество гостей — мы подберём подходящий вариант и подтвердим бронь. Обычно это занимает пару минут.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq2_q">Нужна ли предоплата?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq2_a">Для большинства квартир предоплата не требуется — оплата при заселении. Для длительной аренды и праздничных дат условия обсуждаются индивидуально.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq3_q">Во сколько заезд и выезд?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq3_a">Заселяем в любое время — 24/7. Стандартный выезд до 12:00, но при наличии свободных дат мы гибко подходим к времени заезда и выезда.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq4_q">Что входит в стоимость?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq4_a">Wi-Fi, бытовая техника, посуда, свежее постельное бельё и полотенца, бытовая химия и уборка перед заездом. Всё для комфортного проживания уже на месте.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq5_q">Можно ли заселиться с животными?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq5_a">В части квартир — да, по договорённости. Напишите нам заранее, и мы подберём вариант, где можно с питомцем.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__q"><span data-i18n="faq6_q">Выдаёте ли договор и чек?</span><span class="faq__icon">+</span></summary>
+          <div class="faq__a" data-i18n="faq6_a">Да, оформляем официальный договор аренды и предоставляем фискальный чек по запросу — удобно для командировочных и отчётности.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RULES ==================== -->
+  <section class="section" id="rules">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="rules_eyebrow">Правила</span>
+        <h2 class="section__title" data-i18n="rules_title">Правила проживания</h2>
+        <p class="section__lead" data-i18n="rules_lead">Коротко о главном — чтобы отдых прошёл без сюрпризов.</p>
+      </div>
+
+      <div class="rules">
+        <div class="rule reveal">
+          <span class="rule__num">01</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule1_t">Заселение по документам</h3>
+            <p class="rule__text" data-i18n="rule1_d">При заселении нужно удостоверение личности или паспорт.</p>
+          </div>
+        </div>
+        <div class="rule reveal">
+          <span class="rule__num">02</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule2_t">Возвратный депозит</h3>
+            <p class="rule__text" data-i18n="rule2_d">Небольшой депозит при заселении — вернём при выезде, если всё в порядке.</p>
+          </div>
+        </div>
+        <div class="rule reveal">
+          <span class="rule__num">03</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule3_t">Не курим</h3>
+            <p class="rule__text" data-i18n="rule3_d">Курение в квартирах запрещено — в том числе кальян и вейп.</p>
+          </div>
+        </div>
+        <div class="rule reveal">
+          <span class="rule__num">04</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule4_t">Без шумных вечеринок</h3>
+            <p class="rule__text" data-i18n="rule4_d">Тишина с 23:00 до 08:00 — уважаем соседей.</p>
+          </div>
+        </div>
+        <div class="rule reveal">
+          <span class="rule__num">05</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule5_t">Бережное отношение</h3>
+            <p class="rule__text" data-i18n="rule5_d">Порча имущества возмещается по договорённости.</p>
+          </div>
+        </div>
+        <div class="rule reveal">
+          <span class="rule__num">06</span>
+          <div>
+            <h3 class="rule__title" data-i18n="rule6_t">Количество гостей</h3>
+            <p class="rule__text" data-i18n="rule6_d">Заселяются только гости, указанные при бронировании.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="rules__note reveal" data-i18n-html="rules_note">Полные правила — в разделе «правила» в нашем <a href="https://instagram.com/afr_inalmaty" target="_blank" rel="noopener">Instagram</a>.</p>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION / MAP ==================== -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="loc_eyebrow">Расположение</span>
+        <h2 class="section__title" data-i18n="loc_title">Алматы, ул. Шевченко 85</h2>
+        <p class="section__lead" data-i18n="loc_lead">ЖК «Молодёжный» — в центре города, рядом с метро, ТРЦ и главными достопримечательностями.</p>
+      </div>
+
+      <div class="map reveal">
+        <iframe
+          class="map__frame"
+          src="https://www.google.com/maps?q=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%2085%2C%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B&z=16&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Карта — Алматы, ул. Шевченко 85, ЖК Молодёжный"></iframe>
+
+        <div class="map__card">
+          <div class="map__card-brand">
+            <span class="logo__mark">AFR</span>
+            <span class="logo__dot" aria-hidden="true"></span>
+            <span class="logo__sub">in Almaty</span>
+          </div>
+          <p class="map__card-addr" data-i18n="footer_address">Алматы, ул. Шевченко 85, ЖК «Молодёжный»</p>
+          <div class="map__card-actions">
+            <a href="https://2gis.kz/almaty/firm/70000001079960868" class="btn btn--accent map-card-btn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+              <span data-i18n="map_2gis">Открыть в 2ГИС</span>
+            </a>
+            <a href="https://www.google.com/maps?q=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%2085%2C%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" class="btn btn--ghost map-card-btn" target="_blank" rel="noopener">
+              <span data-i18n="map_google_short">Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta" id="cta">
+    <div class="container cta__inner reveal">
+      <div class="cta__glow"></div>
+      <h2 class="cta__title" data-i18n="cta_title">Готовы заселиться?</h2>
+      <p class="cta__text" data-i18n="cta_text">Напишите нам — подберём квартиру под ваши даты и бюджет за пару минут.</p>
+      <a href="https://wa.me/77474815942?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%BE%D0%B4%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83%20(AFR%20in%20Almaty)" class="btn btn--accent btn--lg" target="_blank" rel="noopener" data-i18n="cta_btn">Написать в WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo">
+          <span class="logo__mark">AFR</span>
+          <span class="logo__sub">in Almaty</span>
+        </a>
+        <p class="footer__tagline" data-i18n="footer_tagline">Аренда квартир в Алматы посуточно и по часовой. Чисто • Конфиденциально • 24/7.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading" data-i18n="footer_contacts">Контакты</h4>
+        <a href="https://www.google.com/maps?q=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%2085%2C%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" class="footer__link" target="_blank" rel="noopener" data-i18n="footer_address">Алматы, ул. Шевченко 85, ЖК «Молодёжный»</a>
+        <a href="tel:+77474815942" class="footer__link">+7 747 481 5942</a>
+        <a href="https://wa.me/77474815942" class="footer__link" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/afr_inalmaty" class="footer__link" target="_blank" rel="noopener">Instagram · @afr_inalmaty</a>
+        <a href="https://www.threads.com/@afr_inalmaty" class="footer__link" target="_blank" rel="noopener">Threads · @afr_inalmaty</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading" data-i18n="footer_nav">Навигация</h4>
+        <a href="#apartments" class="footer__link" data-i18n="nav_apartments">Квартиры</a>
+        <a href="#tariffs" class="footer__link" data-i18n="nav_tariffs">Тарифы</a>
+        <a href="#decor" class="footer__link" data-i18n="nav_decor">Оформление</a>
+        <a href="#reviews" class="footer__link" data-i18n="nav_reviews">Отзывы</a>
+        <a href="#faq" class="footer__link" data-i18n="nav_faq">Вопросы</a>
+        <a href="#rules" class="footer__link" data-i18n="nav_rules">Правила</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> AFR in Almaty. <span data-i18n="footer_rights">Все права защищены.</span></span>
+      <span class="footer__city" data-i18n="footer_city">Алматы, Казахстан</span>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка WhatsApp -->
+  <a href="https://wa.me/77474815942?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83" class="wa-float" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L3 29l7.2-2.3c1.8 1 3.9 1.5 5.8 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.3 1.4 1.4-4.2-.3-.4a10 10 0 01-1.6-5.4C5.8 9.9 10.4 5.3 16 5.3s10.2 4.6 10.2 10.2S21.6 25.7 16 25.7zm5.7-7.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.8.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/>
+    </svg>
+    <span class="wa-float__dot" aria-hidden="true"></span>
+    <span class="wa-float__hint" data-i18n="wa_hint">Обычно отвечаем за пару минут</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
