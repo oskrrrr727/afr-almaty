@@ -14,9 +14,12 @@ const apartments = [
   { title: { ru: "Студия «Комфорт»",       kk: "«Комфорт» студиясы",       en: "«Comfort» studio" },    rooms: "room_studio", guests: "guests_2", folder: 5,  photos: 10 },
   { title: { ru: "Дизайнерская студия",    kk: "Дизайнерлік студия",       en: "Designer studio" },     rooms: "room_studio", guests: "guests_2", folder: 6,  photos: 10 },
   { title: { ru: "Студия-лофт",            kk: "Лофт-студия",              en: "Loft studio" },         rooms: "room_studio", guests: "guests_2", folder: 7,  photos: 10 },
-  { title: { ru: "Студия «Премьер»",       kk: "«Премьер» студиясы",       en: "«Premier» studio" },    rooms: "room_studio", guests: "guests_2", folder: 8,  photos: 10 },
-  { title: { ru: "Тёплая студия",          kk: "Жылы студия",              en: "Warm studio" },         rooms: "room_studio", guests: "guests_2", folder: 9,  photos: 10 },
-  { title: { ru: "Студия «Элит»",          kk: "«Элит» студиясы",          en: "«Elite» studio" },      rooms: "room_studio", guests: "guests_2", folder: 10, photos: 10 },
+  // ⬇ Квартиры 8–10 скрыты, пока нет фото.
+  // Чтобы показать: положить фото в assets/apartments/8 (9, 10)
+  // и убрать «//» в начале нужной строки.
+  // { title: { ru: "Студия «Премьер»",       kk: "«Премьер» студиясы",       en: "«Premier» studio" },    rooms: "room_studio", guests: "guests_2", folder: 8,  photos: 10 },
+  // { title: { ru: "Тёплая студия",          kk: "Жылы студия",              en: "Warm studio" },         rooms: "room_studio", guests: "guests_2", folder: 9,  photos: 10 },
+  // { title: { ru: "Студия «Элит»",          kk: "«Элит» студиясы",          en: "«Elite» studio" },      rooms: "room_studio", guests: "guests_2", folder: 10, photos: 10 },
 ];
 
 /* ==================== ДАННЫЕ ОФОРМЛЕНИЯ ====================
@@ -25,17 +28,17 @@ const decor = [
   {
     title: { ru: "С днём рождения",     kk: "Туған күнге",           en: "Birthday" },
     text:  { ru: "Воздушные шары, свечи и праздничный декор в квартире.", kk: "Әуе шарлары, шамдар және мерекелік безендіру.", en: "Balloons, candles and festive decor in the apartment." },
-    price: "12 000 ₸", folder: 1, photos: 5, wa: "Хочу оформление на день рождения (AFR in Almaty)",
+    price: "12 000 ₸", folder: 1, photos: 3, wa: "Хочу оформление на день рождения (AFR in Almaty)",
   },
   {
     title: { ru: "Романтический вечер", kk: "Романтикалық кеш",      en: "Romantic evening" },
     text:  { ru: "Свечи, лепестки роз, мягкий свет и атмосфера для двоих.", kk: "Шамдар, раушан жапырақтары, жұмсақ жарық — екеуге арналған атмосфера.", en: "Candles, rose petals, soft light and a mood for two." },
-    price: "10 000 ₸", folder: 2, photos: 5, wa: "Хочу романтическое оформление (AFR in Almaty)",
+    price: "10 000 ₸", folder: 2, photos: 3, wa: "Хочу романтическое оформление (AFR in Almaty)",
   },
   {
     title: { ru: "Романтика + напитки", kk: "Романтика + сусындар",  en: "Romance + drinks" },
     text:  { ru: "Полное романтическое оформление с игристым и деталями.", kk: "Толық романтикалық безендіру, шампанмен және бөлшектермен.", en: "Full romantic setup with sparkling wine and details." },
-    price: "15 000 ₸", folder: 3, photos: 5, wa: "Хочу романтическое оформление с напитками (AFR in Almaty)",
+    price: "15 000 ₸", folder: 3, photos: 3, wa: "Хочу романтическое оформление с напитками (AFR in Almaty)",
   },
 ];
 
