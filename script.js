@@ -7,16 +7,16 @@ let currentLang = "ru";
    Фото — в своих папках: assets/apartments/1/1.jpg ... 1/10.jpg и т.д.
    Названия переведены на 3 языка; rooms/guests — ключи словаря. */
 const apartments = [
-  { title: { ru: "Премиум-студия «Люкс»",         kk: "«Люкс» премиум-студиясы",       en: "«Lux» premium studio" },        rooms: "room_studio", guests: "guests_2",  folder: 1,  photos: 10 },
-  { title: { ru: "Стильная студия",               kk: "Стильді студия",                en: "Stylish studio" },              rooms: "room_studio", guests: "guests_2",  folder: 2,  photos: 10 },
-  { title: { ru: "Однокомнатная с видом на горы", kk: "Тауға көрінісі бар бір бөлмелі", en: "One-room with mountain view" }, rooms: "room_one",    guests: "guests_23", folder: 3,  photos: 10 },
-  { title: { ru: "Светлая студия",                kk: "Жарық студия",                  en: "Bright studio" },               rooms: "room_studio", guests: "guests_2",  folder: 4,  photos: 10 },
-  { title: { ru: "Однушка «Комфорт+»",            kk: "«Комфорт+» бір бөлмелі",         en: "«Comfort+» one-room" },         rooms: "room_one",    guests: "guests_23", folder: 5,  photos: 10 },
-  { title: { ru: "Премиум-студия «Панорама»",     kk: "«Панорама» премиум-студиясы",   en: "«Panorama» premium studio" },   rooms: "room_studio", guests: "guests_2",  folder: 6,  photos: 10 },
-  { title: { ru: "Дизайнерская студия",           kk: "Дизайнерлік студия",            en: "Designer studio" },             rooms: "room_studio", guests: "guests_2",  folder: 7,  photos: 10 },
-  { title: { ru: "Однокомнатная с балконом",      kk: "Балконы бар бір бөлмелі",        en: "One-room with balcony" },       rooms: "room_one",    guests: "guests_23", folder: 8,  photos: 10 },
-  { title: { ru: "Студия-лофт",                   kk: "Лофт-студия",                   en: "Loft studio" },                 rooms: "room_studio", guests: "guests_2",  folder: 9,  photos: 10 },
-  { title: { ru: "Однушка «Премьер»",             kk: "«Премьер» бір бөлмелі",          en: "«Premier» one-room" },          rooms: "room_one",    guests: "guests_23", folder: 10, photos: 10 },
+  { title: { ru: "Студия «Люкс»",          kk: "«Люкс» студиясы",          en: "«Lux» studio" },        rooms: "room_studio", guests: "guests_2", folder: 1,  photos: 10 },
+  { title: { ru: "Стильная студия",        kk: "Стильді студия",           en: "Stylish studio" },      rooms: "room_studio", guests: "guests_2", folder: 2,  photos: 10 },
+  { title: { ru: "Светлая студия",         kk: "Жарық студия",             en: "Bright studio" },       rooms: "room_studio", guests: "guests_2", folder: 3,  photos: 10 },
+  { title: { ru: "Уютная студия",          kk: "Жайлы студия",             en: "Cosy studio" },         rooms: "room_studio", guests: "guests_2", folder: 4,  photos: 10 },
+  { title: { ru: "Студия «Комфорт»",       kk: "«Комфорт» студиясы",       en: "«Comfort» studio" },    rooms: "room_studio", guests: "guests_2", folder: 5,  photos: 10 },
+  { title: { ru: "Дизайнерская студия",    kk: "Дизайнерлік студия",       en: "Designer studio" },     rooms: "room_studio", guests: "guests_2", folder: 6,  photos: 10 },
+  { title: { ru: "Студия-лофт",            kk: "Лофт-студия",              en: "Loft studio" },         rooms: "room_studio", guests: "guests_2", folder: 7,  photos: 10 },
+  { title: { ru: "Студия «Премьер»",       kk: "«Премьер» студиясы",       en: "«Premier» studio" },    rooms: "room_studio", guests: "guests_2", folder: 8,  photos: 10 },
+  { title: { ru: "Тёплая студия",          kk: "Жылы студия",              en: "Warm studio" },         rooms: "room_studio", guests: "guests_2", folder: 9,  photos: 10 },
+  { title: { ru: "Студия «Элит»",          kk: "«Элит» студиясы",          en: "«Elite» studio" },      rooms: "room_studio", guests: "guests_2", folder: 10, photos: 10 },
 ];
 
 /* ==================== ДАННЫЕ ОФОРМЛЕНИЯ ====================
