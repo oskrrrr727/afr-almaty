@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://afr-in-almaty.kz/sitemap.xml
